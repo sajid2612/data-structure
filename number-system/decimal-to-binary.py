@@ -12,9 +12,13 @@ decimal_num = input()
 
 quotient = 0
 remainder = 0
-
+binaryNumber = []
+i = 0
 while decimal_num >= 1:
     quotient = decimal_num / 2
     remainder = decimal_num % 2
     decimal_num = quotient
-    print(remainder)
+    binaryNumber.insert(i, remainder)
+    i = i + 1
+
+print binaryNumber
